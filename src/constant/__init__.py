@@ -7,8 +7,8 @@ MONGO_COLLECTION_NAME = "waferfault"
 
 
 TARGET_COLUMN = "quality"
-MONGO_DB_URL="mongodb+srv://chaurasiyashubham457:zxcvbn1@cluster0.biogddr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-
+MONGO_DB_URL="mongodb+srv://chaurasiyashubham457:4lE9qVO6zGvAHzSe@cluster0.biogddr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# mongodb+srv://chaurasiyashubham457:4lE9qVO6zGvAHzSe@cluster0.biogddr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 MODEL_FILE_NAME = "model"
 MODEL_FILE_EXTENSION = ".pkl"

@@ -73,11 +73,8 @@ class DataIngestion:
 
             logging.info("got the data from mongodb")
 
-            logging.info("exited initiate_data_ingestion method of data ingestion class")
+            logging.info("exited initiate_data_ingestion methos of data ingestion class")
 
             return feature_store_file_path
         except Exception as e:
             raise CustomException(e,sys) from e
-
-        
-

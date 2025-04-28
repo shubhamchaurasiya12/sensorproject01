@@ -42,7 +42,7 @@ class TrainingPipeline:
             train_arr,test_arr,preprocessor_path = self.start_data_transformation(feature_store_file_path)
             r2_square = self.start_model_training(train_arr,test_arr)
 
-            print("Training completed. Trained model score:", r2_square)
+            print("training completed. Trained model score:", r2_square)
 
         except Exception as e:
             raise CustomException(e,sys)
