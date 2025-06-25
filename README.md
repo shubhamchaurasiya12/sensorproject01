@@ -1,4 +1,4 @@
-# SENSORPROJECT01
+<h1 align="center">SENSORPROJECT01</h1>
 
 **Transforming Sensor Data into Actionable Insights**
 
