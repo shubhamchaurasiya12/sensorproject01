@@ -5,6 +5,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/last%20commit-today-brightgreen" alt="last commit"/>
   <img src="https://img.shields.io/badge/python-89.5%25-blue" alt="Python usage"/>
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/built%20with-Flask%2C%20Markdown%2C%20Python%2C%20YAML-blue" alt="Built with"/>
 </p>
 
