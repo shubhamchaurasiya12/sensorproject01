@@ -3,81 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SENSORPROJECT01 README</title>
-    <!-- Tailwind CSS CDN -->
+    <title>SENSORPROJECT01</title>
+    
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom configuration for Tailwind to use the "Inter" font family
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
     <style>
-        /* Custom styles for badges, not easily done with simple Tailwind classes */
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.25rem 0.75rem;
-            border-radius: 0.375rem; /* Slightly rounded corners for badges */
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin: 0.25rem;
-            color: white;
+        /* Basic style to ensure body takes full height */
+        html, body {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
         }
     </style>
-    <script>
-        // Optional: Script to manually toggle dark mode for testing if preferred-color-scheme doesn't work directly in some viewers
-        // This is not strictly necessary for the 'dark:' variant to work based on system preferences,
-        // but can be added for a user-controlled toggle.
-        // For actual system preference detection, Tailwind's 'dark:' variant automatically handles it.
-        // You can uncomment and modify this if you want a manual switch.
-        /*
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-        */
-    </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 flex justify-center items-start min-h-screen p-8 box-border font-inter">
-    <div class="container bg-white dark:bg-gray-800 p-10 rounded-xl shadow-lg max-w-3xl w-full text-center">
-        <!-- Main Title -->
-        <h1 class="text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-6 tracking-wide">
-            SENSORPROJECT01
-        </h1>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
 
-        <!-- Subtitle -->
-        <p class="text-2xl italic text-gray-600 dark:text-gray-300 mb-10">
-            Transforming Sensor Data into Actionable Insights
-        </p>
+    <!-- Main container to center content -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <!-- Content wrapper -->
+        <div class="text-center space-y-8 max-w-2xl w-full">
 
-        <!-- GitHub-like Badges -->
-        <div class="flex flex-wrap justify-center items-center mb-10">
-            <span class="badge bg-gray-700">last commit <span class="ml-1 bg-blue-500 rounded px-2 py-0.5">today</span></span>
-            <span class="badge bg-blue-600">python <span class="ml-1 bg-blue-800 rounded px-2 py-0.5">89.5%</span></span>
-            <span class="badge bg-gray-700">languages <span class="ml-1 bg-blue-500 rounded px-2 py-0.5">3</span></span>
-        </div>
+            <!-- Main Title -->
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white">
+                SENSORPROJECT01
+            </h1>
 
-        <!-- Built With Section Title -->
-        <p class="text-xl italic text-gray-700 dark:text-gray-300 mb-8">
-            Built with the tools and technologies:
-        </p>
+            <!-- Subtitle -->
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                Transforming Sensor Data into Actionable Insights
+            </p>
 
-        <!-- Tool Badges -->
-        <div class="flex flex-wrap justify-center items-center gap-4">
-            <span class="badge bg-black text-white">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 7a1 1 0 11-2 0 1 1 0 012 0zm5 0a1 1 0 11-2 0 1 1 0 012 0zM5.5 12c.745 2.146 3.125 3.5 4.5 3.5s3.755-1.354 4.5-3.5H5.5z"></path></svg>
-                Flask
-            </span>
-            <span class="badge bg-gray-800 text-white">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M16 10a6 6 0 11-12 0 6 6 0 0112 0zm-2 0a4 4 0 10-8 0 4 4 0 008 0zm-4 4a2 2 0 100-4 2 2 0 000 4z"></path></svg>
-                Markdown
-            </span>
-            <span class="badge bg-blue-600 text-white">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 7a1 1 0 11-2 0 1 1 0 012 0zm5 0a1 1 0 11-2 0 1 1 0 012 0zM5.5 12c.745 2.146 3.125 3.5 4.5 3.5s3.755-1.354 4.5-3.5H5.5z"></path></svg>
-                Python
-            </span>
-            <span class="badge bg-red-600 text-white">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 7a1 1 0 11-2 0 1 1 0 012 0zm5 0a1 1 0 11-2 0 1 1 0 012 0zM5.5 12c.745 2.146 3.125 3.5 4.5 3.5s3.755-1.354 4.5-3.5H5.5z"></path></svg>
-                YAML
-            </span>
+            <!-- Status Badges -->
+            <div class="flex items-center justify-center flex-wrap gap-2">
+                <span class="bg-gray-700 text-white text-sm font-medium px-3 py-1 rounded-md">
+                    last commit &nbsp; <span class="font-bold text-green-400">today</span>
+                </span>
+                <span class="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-md">
+                    python &nbsp; <span class="font-bold">89.5%</span>
+                </span>
+                <span class="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-md">
+                    languages &nbsp; <span class="font-bold">3</span>
+                </span>
+            </div>
+
+            <!-- "Built With" Section -->
+            <div class="space-y-4 pt-6">
+                <h2 class="text-md text-gray-500 dark:text-gray-400">
+                    Built with the tools and technologies:
+                </h2>
+                
+                <!-- Technology Badges -->
+                <div class="flex items-center justify-center flex-wrap gap-3">
+                    <span class="bg-gray-900 dark:bg-gray-200 text-white dark:text-black text-sm font-bold px-4 py-2 rounded-lg shadow-md">
+                        Flask
+                    </span>
+                    <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-bold px-4 py-2 rounded-lg shadow-md">
+                        Markdown
+                    </span>
+                    <span class="bg-blue-500 text-white text-sm font-bold px-4 py-2 rounded-lg shadow-md">
+                        Python
+                    </span>
+                    <span class="bg-red-500 text-white text-sm font-bold px-4 py-2 rounded-lg shadow-md">
+                        YAML
+                    </span>
+                </div>
+            </div>
+
         </div>
     </div>
+
 </body>
 </html>
 
