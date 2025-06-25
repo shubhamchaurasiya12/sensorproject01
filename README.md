@@ -58,11 +58,15 @@ cd sensorproject01
 # Install the dependencies
 pip install -r requirements.txt
 
----
-
+```
 ## 🚀 Usage
 
 Run the project with:
 
 ```bash
-python {entrypoint}
+python app.py
+```
+
+# 🧪 Testing
+{test_command}
+
