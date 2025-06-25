@@ -68,5 +68,7 @@ python app.py
 ```
 
 # 🧪 Testing
-{test_command}
+```bash
+pytest tests/
+
 
